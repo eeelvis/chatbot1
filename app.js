@@ -31,7 +31,7 @@ bot.dialog('/', dialog);
 
 //dialog.matches('Saudacao', builder.DialogAction.send('Entendi que voce quer dizer ola'));
 
-dialog.matches('Começar conversa', [
+dialog.matches('Saudacao', [
 
     function (session, args, next) {
 
