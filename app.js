@@ -11,11 +11,11 @@ server.listen(process.env.PORT || 3000, function()
 
 // Create chat bot
 var connector = new builder.ChatConnector
-({ appId: 'YourAppId', appPassword: 'YourAppPassword' }); 
+({ appId: '471f5249-54e9-4f28-b9c8-a84bce3d8b73', appPassword: 'jLvpTor0mwSdigQXhJvZmAr' }); 
 var bot = new builder.UniversalBot(connector);
 server.post('/api/messages', connector.listen());
 
 // Create bot dialogs
 bot.dialog('/', function (session) {
     session.send("Hello World");
-});
+}); 
